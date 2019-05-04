@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+.navbar-nav{
+justify-content: space-between;
+}
+.logo{
+    width: 9%;
+    margin: 1%;
+}
+.logo img{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 3;
+
+}
+.navbar-collapse{
+    justify-content: center;
+}
+.nav-link:hover{
+border-bottom: 3px solid orange;
+}
+.navbar-expand-lg{
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    height: 15%;
+    z-index: 4;
+
+}
+.bg-dark {
+    background-color: #000!important;
+}
