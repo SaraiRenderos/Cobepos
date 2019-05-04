@@ -1,0 +1,66 @@
+div.body{
+    background: url(../../assets/fondo3.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: cover;
+  
+}
+div.position{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	text-align: center;
+}
+div.position h4.title{
+	padding-top: 13%;
+	font-size: 2.5rem;
+	background: chocolate;
+	color: white;
+
+}
+.slider {
+	
+	width: 75%;
+	margin: auto;
+    overflow: hidden;
+    background: aliceblue;
+    opacity: 1.5;
+	height: 45%;
+	margin-top: 5%;
+
+}
+
+.slider ul {
+	display: flex;
+	padding: 5% 0;
+	width: 400%;
+	text-align: center;
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 50%;
+	height: 300px;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}

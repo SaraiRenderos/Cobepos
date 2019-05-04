@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './platos.component.html',
   styleUrls: ['./platos.component.css']
 })
-export class PlatosComponent implements OnInit {
+export class PlatosComponent {
 
-  constructor() { }
 
-  ngOnInit() {
-  }
 
 }
