@@ -14,6 +14,10 @@ div.position{
 	bottom: 0;
 	text-align: center;
 }
+div.position div.container{
+	margin-top: 10%;
+    background: aliceblue;
+}
 div.position h4.title{
 	padding-top: 13%;
 	font-size: 2.5rem;
@@ -63,4 +67,10 @@ div.position h4.title{
 	
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
+}
+.row img{
+width: 55%;
+}
+.row.plates{
+	display: block;
 }

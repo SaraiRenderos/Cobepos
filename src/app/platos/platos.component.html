@@ -22,7 +22,20 @@
           </ul>
         </div>
   
-           
+        <div class="container">
+          <h4>Menu</h4>
+          <div class="row">
+          <div class="col-md-4 plates" *ngFor="let ITALIA of italia">
+            <img  [src]='ITALIA.url'  alt="">
+            <h3 >{{ITALIA.nombre}}</h3>
+            <div>{{ITALIA.clasificacion}}</div>
+            <div>{{ITALIA.cantidad}}</div>
+            <div>{{ITALIA.ingredientes}}</div>
+            <div>{{ITALIA.precio}}</div>
+          </div>
+          </div>
+         </div>
           
        </div>
+       
 </div>

@@ -13,17 +13,18 @@ export class ServicioService {
   ];
 
   Italia:any = [
-    { id: 1 , nombre:"Bruschetta", clasificacion: "Entrada", precio: "$6.55", cantidad: "5" ,  ingredientes:"Baquetas francesas con queso mozzarela con una deliciosa salsa de tomate acompañada de unas hojitas de albahaca" ,url:'./assets/'  },
-    { id: 2 , nombre:"Berenjenas a la parmesana", clasificacion: "Plato fuerte", precio: "$15", cantidad: "2" ,  ingredientes:"Rodajas de berenjena , queso parmesado, queso mozzarela, salsa de tomate" ,url:'./assets/'  },
-    { id: 3 , nombre:"Lasaña", clasificacion: "Plato fuerte", precio: "$10.50", cantidad: "1 Porción" ,  ingredientes:"Champiñones, carne picada, calabacín grande,salsa de tomate y leche" ,url:'./assets/'  },
-    { id: 4 , nombre:"Canelones", clasificacion: "Plato fuerte", precio: "$5.65", cantidad: "8" ,  ingredientes:"Espinaca,pasas,piñones,leche" ,url:'./assets/'  },
-    { id: 5 , nombre:"Ravioli", clasificacion: "Entrada", precio: "$6.25", cantidad: "10" ,  ingredientes:"Quesso,ricotta,salsa de tomate,tomillo fresco, Albahaca" ,url:'./assets/'  },
-    { id: 6 , nombre:"Panzerotti", clasificacion: "Entrada", precio: "$5.50", cantidad: "6" ,  ingredientes:"Queso mozzarela , salsa de tomate apuliano, orégano" ,url:'./assets/'  },
-    { id: 7 , nombre:"Espaguetis", clasificacion: "Plato fuerte", precio: "$7.50", cantidad: "1 porción" ,  ingredientes:"Salmón ahumado,romero,salsa de tomate ,cebolla salteada" ,url:'./assets/'  },
-    { id: 8 , nombre:"Risotto agli spinaci", clasificacion: "Platillo extra", precio: "$3.75", cantidad: "1 porción" ,  ingredientes:"Espinaca, queso parmesano, guindilla, cebolla" ,url:'./assets/'  },
-    { id: 9 , nombre:"Pizza marinara", clasificacion: "Plato fuerte", precio: "$10", cantidad: "8 porciones" ,  ingredientes:"Tomate, orégano" ,url:'./assets/'  },
-    { id: 10 , nombre:"Calzone", clasificacion: "Entrada", precio: "$4.20", cantidad: "2 porciones" ,  ingredientes:"Queso mozzarella, ricotta, parmesano " ,url:'./assets/'  }
-  ];
+    { id: 1 , nombre:"Bruschetta", clasificacion: "Entrada", precio: "$6.55", cantidad: "5" ,  ingredientes:"Baquetas francesas con queso mozzarela con una deliciosa salsa de tomate acompañada de unas hojitas de albahaca" ,url:'./assets/italia/Bruschetta.jpeg'  },
+    { id: 2 , nombre:"Berenjenas a la parmesana", clasificacion: "Plato fuerte", precio: "$15", cantidad: "2" ,  ingredientes:"Rodajas de berenjena , queso parmesado, queso mozzarela, salsa de tomate" ,url:'./assets/italia/berenjena.jpg'  },
+    { id: 3 , nombre:"Lasaña", clasificacion: "Plato fuerte", precio: "$10.50", cantidad: "1 Porción" ,  ingredientes:"Champiñones, carne picada, calabacín grande,salsa de tomate y leche" ,url:'./assets/italia/lasaña.jpg'  },
+    { id: 4 , nombre:"Canelones", clasificacion: "Plato fuerte", precio: "$5.65", cantidad: "8" ,  ingredientes:"Espinaca,pasas,piñones,leche" ,url:'./assets/italia/canelones.jpg'  },
+    { id: 5 , nombre:"Ravioli", clasificacion: "Entrada", precio: "$6.25", cantidad: "10" ,  ingredientes:"Quesso,ricotta,salsa de tomate,tomillo fresco, Albahaca" ,url:'./assets/italia/ravioli.jpg'  },
+    { id: 6 , nombre:"Panzerotti", clasificacion: "Entrada", precio: "$5.50", cantidad: "6" ,  ingredientes:"Queso mozzarela , salsa de tomate apuliano, orégano" ,url:'./assets/italia/Panzerotti.jpg'  },
+    { id: 7 , nombre:"Espaguetis", clasificacion: "Plato fuerte", precio: "$7.50", cantidad: "1 porción" ,  ingredientes:"Salmón ahumado,romero,salsa de tomate ,cebolla salteada" ,url:'./assets/italia/espaguetis.jpg'  },
+    { id: 8 , nombre:"Risotto agli spinaci", clasificacion: "Platillo extra", precio: "$3.75", cantidad: "1 porción" ,  ingredientes:"Espinaca, queso parmesano, guindilla, cebolla" ,url:'./assets/italia/Risotto.jpg'  },
+    { id: 9 , nombre:"Pizza marinara", clasificacion: "Plato fuerte", precio: "$10", cantidad: "8 porciones" ,  ingredientes:"Tomate, orégano" ,url:'./assets/italia/Pizza.jpg'  },
+    { id: 10 , nombre:"Calzone", clasificacion: "Entrada", precio: "$4.20", cantidad: "2 porciones" ,  ingredientes:"Queso mozzarella, ricotta, parmesano " ,url:'./assets/italia/Calzone.jpg'  }
+  
+];
   Americana:any = [
     { id: 1 , nombre:"Costillas de cerdo al horno", clasificacion: "Plato fuerte", precio: "$8.25", cantidad: "2" ,  ingredientes:"Ricas costillas de cerdo con barbacoa , acompañado con unas papas salteadas " ,url:'./assets/'  },
     { id: 2 , nombre:" Hamburguesa", clasificacion: "Plato fuerte", precio: "$6.50", cantidad: "1" ,  ingredientes:"Carne de 150g, acompañada de papas fritas " ,url:'./assets/'  },
@@ -99,6 +100,8 @@ export class ServicioService {
 public getPlatos(){
   return this.Ofertas;
 }
-  
+public getItalia(){
+  return this.Italia;
+}
 
 }
