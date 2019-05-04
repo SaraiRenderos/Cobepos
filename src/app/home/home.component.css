@@ -1,0 +1,111 @@
+.imgMain{
+    width: 100%;
+    filter: brightness(45%);
+}
+.long-phrase{
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    color: white;
+    text-align: center;
+}
+.long-phrase h3{
+    padding-top: 25%;
+    font-size: 265%;
+    font-family: 'Rubik';
+}
+h3 .text-place{
+    font-family: 'Kaushan Script';
+
+}
+.title-offers{
+    padding-top: 0;
+}
+div.offers div.title-offers div.plate{
+    background: black;
+    border-radius: 50% 50%;
+    width: 50px;
+    height: 50px;
+
+}
+.first-plates{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+
+}
+.first-plates img {
+width: 50px;
+}
+.food-one-offers{
+    display: flex;
+    padding: 1%;
+}
+.food-one-offers img{
+    width: 40%;
+    height: 10%;
+
+}
+.detail-plate{
+    display: block;
+    padding-left: 1%;
+}
+div.plate{
+    background: red;
+  border-radius: 15em;
+  -moz-border-radius: 15em;
+  -webkit-border-radius: 15em;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 14em;
+  margin-right: 15px;
+  text-align: center;
+  width: 30em; 
+  padding: 5%;
+  display: flex;
+}
+.detail-plate h4{
+    color: chocolate;
+}
+.offers{
+    display: flex;
+    padding: 2%;
+}
+.pinture-offer{
+    text-align: center;
+    
+}
+.pinture-offer img{
+    width: 50%;
+    padding: 1%
+}
+.pinture-offer img:hover{
+    transform: scale(1.25);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.marquee img{
+padding-right: 5%;
+}
+.detail-plate{
+    display:inline;
+    }
+    .detail-out h4{
+        border-radius: 50px 50px;
+        background: #110f0f;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        padding: 2%;
+    }
+   
+.menu-offers{
+    padding-right: 10%;
+}

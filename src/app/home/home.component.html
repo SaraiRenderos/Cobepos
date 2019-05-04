@@ -1,3 +1,39 @@
-<p>
-  home works!
-</p>
+<img src="../assets/comida/main1.jpg" alt="imagen principal" class="imgMain">
+<div class="long-phrase">
+ <h3>
+    <label class="text-place"> Tus platillos </label> <br> favoritos <br> en un solo <br> <label class="text-place">Lugar</label> 
+ </h3>
+</div>
+<div class="offers">
+    <div class="menu-offers">
+        <h2>
+            Ofertas Especiales
+        </h2>
+        <div class="food-one-offers" *ngFor="let OFERTAS of Ofertas">
+
+             <img [src]='OFERTAS.url' />
+             <div class="detail-plate">
+                    <h4> {{OFERTAS.nombre}} </h4>
+                    <div class="detail-out">
+                        <p>{{OFERTAS.ingredientes}} </p>
+                        <h4>{{OFERTAS.precio}}</h4>
+                    </div>
+
+                    
+                    
+             </div>
+           
+        </div>
+    </div>
+        <div class="pinture-offer ">
+            <div class="   pinture-one">
+                <img src="../assets/comida/Pizza.jpg" alt="">
+                <img src="../assets/francia/dauphinois.jpg" alt="">
+            </div>
+            <div class="pinture-two" > 
+                    <img src="../assets/china/cerdo.JPG" alt="">
+                    <img src="../assets/mexicana/quesadillas.jpg" alt="">
+                </div>
+        </div>
+        
+    </div>
