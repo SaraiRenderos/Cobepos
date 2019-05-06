@@ -41,6 +41,10 @@ div.Alcohol{
   margin-top: 5%;
 
 }
- .Without div.content{
+.alcohol div.content{
 background: rgba(255, 255, 255, 0.7)
  }
+.two{
+    justify-content: center;
+margin: 0;
+}

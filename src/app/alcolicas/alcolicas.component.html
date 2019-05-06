@@ -1,0 +1,47 @@
+<div class=" container body">
+                <div class="row ">
+                        <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary"  routerLink="/Bebidas">Sin Alcohol</button>
+
+                        </div>
+                        <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary"  routerLink="/Bebidas">Con Alcohol</button>
+
+                                </div>
+                  </div>
+  <div class="row two">
+          
+       
+  <div class="col-md-10 alcohol">
+          
+          <div class="container content ">
+          <h3>Alcoholicas</h3>
+          <div class="row">
+                  <div class="col-md-4 drink-content" *ngFor="let Alcoholicas of alcohol">
+                         
+               <img [src]='Alcoholicas.url' />
+               <div class="detail-drink">
+                      <h4> {{Alcoholicas.nombre}} </h4>
+                      <div class="detail-out">
+                          <p>{{Alcoholicas.nacionalidad}} </p>
+                          <p>{{Alcoholicas.clasificacion}} </p>
+                          <h4>{{Alcoholicas.precio}}</h4>
+                      </div>
+  
+                      
+                      
+                        </div>
+          </div>
+          
+  </div>
+  </div>
+  
+  </div>
+ 
+  
+  </div>
+  
+         
+        
+  </div>
+  

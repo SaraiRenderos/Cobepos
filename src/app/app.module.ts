@@ -9,14 +9,15 @@ import { PlatosComponent } from './platos/platos.component';
 import { BebidasComponent } from './bebidas/bebidas.component';
 import { PostresComponent } from './postres/postres.component';
 import { ComentariosComponent } from './comentarios/comentarios.component';
+import { AlcolicasComponent } from './alcolicas/alcolicas.component';
 const  appRoutes: Routes = [
   {path:'', component: HomeComponent},
   {path:'Home', component: HomeComponent},
   {path:'Platos', component: PlatosComponent},
   {path:'Bebidas', component: BebidasComponent},
   {path:'Postres', component: PostresComponent},
-  {path:'Comentarios', component: ComentariosComponent}
-
+  {path:'Comentarios', component: ComentariosComponent},
+  {path:'Alcoholicas', component: AlcolicasComponent}
 ];
 
 @NgModule({
@@ -26,7 +27,8 @@ const  appRoutes: Routes = [
     PlatosComponent,
     BebidasComponent,
     PostresComponent,
-    ComentariosComponent
+    ComentariosComponent,
+    AlcolicasComponent
   ],
   imports: [
     BrowserModule,

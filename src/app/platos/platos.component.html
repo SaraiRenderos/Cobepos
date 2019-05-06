@@ -22,20 +22,143 @@
           </ul>
         </div>
   
-        <div class="container">
-          <h4>Menu</h4>
-          <div class="row">
-          <div class="col-md-4 plates" *ngFor="let ITALIA of italia">
-            <img  [src]='ITALIA.url'  alt="">
-            <h3 >{{ITALIA.nombre}}</h3>
-            <div>{{ITALIA.clasificacion}}</div>
-            <div>{{ITALIA.cantidad}}</div>
-            <div>{{ITALIA.ingredientes}}</div>
-            <div>{{ITALIA.precio}}</div>
-          </div>
-          </div>
-         </div>
-          
-       </div>
        
+         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+           <h4>Menu</h4>
+            <ol class="carousel-indicators">
+              <li  data-target="#carouselExampleIndicators" data-slide-to="0" class="active" aria-placeholder="mexico" ></li>
+              <li  data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li  data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li  data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li  data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li  data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+              <li  data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="container">
+                      <h4>Italia</h4>
+                      
+                      <div class="row">
+                      <div class="col-md-4 plates " *ngFor="let ITALIA of italia">
+                        <img  [src]='ITALIA.url'  alt="">
+                        <h3 >{{ITALIA.nombre}}</h3>
+                        <div>{{ITALIA.clasificacion}}</div>
+                        <div>{{ITALIA.cantidad}}</div>
+                        <div>{{ITALIA.ingredientes}}</div>
+                        <div>{{ITALIA.precio}}</div>
+                      </div>
+                      </div>
+                     </div>
+              </div>
+              <div class="carousel-item ">
+                  <div class="container ">
+                      <h4>Francia</h4>
+                      
+                      <div class="row">
+                      <div class="col-md-4 plates" *ngFor="let FRANCIA of francia">
+                        <img  [src]='FRANCIA.url'  alt="">
+                        <h3 >{{FRANCIA.nombre}}</h3>
+                        <div>{{FRANCIA.clasificacion}}</div>
+                        <div>{{FRANCIA.cantidad}}</div>
+                        <div>{{FRANCIA.ingredientes}}</div>
+                        <div>{{FRANCIA.precio}}</div>
+                      </div>
+                      </div>
+                     </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="container">
+                      <h4>Mexico</h4>
+                      
+                      <div class="row">
+                      <div class="col-md-4 plates" *ngFor="let MEXICO of mexico">
+                        <img  [src]='MEXICO.url'  alt="">
+                        <h3 >{{MEXICO.nombre}}</h3>
+                        <div>{{MEXICO.clasificacion}}</div>
+                        <div>{{MEXICO.cantidad}}</div>
+                        <div>{{MEXICO.ingredientes}}</div>
+                        <div>{{MEXICO.precio}}</div>
+                      </div>
+                      </div>
+                     </div>
+              </div>
+              <div class="carousel-item ">
+                  <div class="container">
+                      <h4>Americana</h4>
+                      
+                      <div class="row">
+                      <div class="col-md-4 plates " *ngFor="let AMERICANA of americana">
+                        <img  [src]='AMERICANA.url'  alt="">
+                        <h3 >{{AMERICANA.nombre}}</h3>
+                        <div>{{AMERICANA.clasificacion}}</div>
+                        <div>{{AMERICANA.cantidad}}</div>
+                        <div>{{AMERICANA.ingredientes}}</div>
+                        <div>{{AMERICANA.precio}}</div>
+                      </div>
+                      </div>
+                     </div>
+              </div>
+              <div class="carousel-item ">
+                  <div class="container">
+                      <h4>China</h4>
+                      
+                      <div class="row">
+                      <div class="col-md-4 plates " *ngFor="let CHINA of china">
+                        <img  [src]='CHINA.url'  alt="">
+                        <h3 >{{CHINA.nombre}}</h3>
+                        <div>{{CHINA.clasificacion}}</div>
+                        <div>{{CHINA.cantidad}}</div>
+                        <div>{{CHINA.ingredientes}}</div>
+                        <div>{{CHINA.precio}}</div>
+                      </div>
+                      </div>
+                     </div>
+              </div>
+              <div class="carousel-item ">
+                  <div class="container">
+                      <h4>Japon</h4>
+                      
+                      <div class="row">
+                      <div class="col-md-4 plates " *ngFor="let JAPONESA of japon">
+                        <img  [src]='JAPONESA.url'  alt="">
+                        <h3 >{{JAPONESA.nombre}}</h3>
+                        <div>{{JAPONESA.clasificacion}}</div>
+                        <div>{{JAPONESA.cantidad}}</div>
+                        <div>{{JAPONESA.ingredientes}}</div>
+                        <div>{{JAPONESA.precio}}</div>
+                      </div>
+                      </div>
+                     </div>
+              </div>
+              <div class="carousel-item ">
+                  <div class="container">
+                      <h4>Salvadoreña</h4>
+                      
+                      <div class="row">
+                      <div class="col-md-4 plates " *ngFor="let SALVADOR of salvador">
+                        <img  [src]='SALVADOR.url'  alt="">
+                        <h3 >{{SALVADOR.nombre}}</h3>
+                        <div>{{SALVADOR.clasificacion}}</div>
+                        <div>{{SALVADOR.cantidad}}</div>
+                        <div>{{SALVADOR.ingredientes}}</div>
+                        <div>{{SALVADOR.precio}}</div>
+                      </div>
+                      </div>
+                     </div>
+              </div>
+            
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+       
+     
+    </div>
 </div>

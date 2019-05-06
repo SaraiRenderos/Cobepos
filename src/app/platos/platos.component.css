@@ -16,7 +16,12 @@ div.position{
 }
 div.position div.container{
 	margin-top: 10%;
-    background: aliceblue;
+	background: black;
+	color: aliceblue;
+
+}
+.carousel-indicators{
+	top: 5%;
 }
 div.position h4.title{
 	padding-top: 13%;
@@ -73,4 +78,22 @@ width: 55%;
 }
 .row.plates{
 	display: block;
+}
+
+ol li{
+background: chocolate;
+padding-right: 5%;
+width: 10%;
+height: 10px;
+}
+#carouselExampleIndicators .carousel{
+	padding-top: 5%;
+	text-align: center;
+}
+#carouselExampleIndicators{margin-top: 5%;
+	background: aliceblue;}
+#carouselExampleIndicators h4{
+	padding: 0 3%;
+    font-size: xx-large;
+
 }

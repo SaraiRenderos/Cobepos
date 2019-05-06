@@ -1,3 +1,59 @@
-<p>
-  bebidas works!
-</p>
+<div class=" container body">
+<div class="row">
+       
+<div class="col-md-6 Without">
+        <button type="button" class="btn btn-primary"  routerLink="/Bebidas">Sin Alcohol</button>
+        <div class="container content ">
+        <h3>Calientes</h3>
+        <div class="row">
+                <div class="col-md-6 drink-content" *ngFor="let Calientes of calientes">
+                       
+             <img [src]='Calientes.url' />
+             <div class="detail-drink">
+                    <h4> {{Calientes.nombre}} </h4>
+                    <div class="detail-out">
+                        <p>{{Calientes.nacionalidad}} </p>
+                        <p>{{Calientes.clasificacion}} </p>
+                        <h4>{{Calientes.precio}}</h4>
+                    </div>
+
+                    
+                    
+                      </div>
+        </div>
+        
+</div>
+</div>
+
+</div>
+<div class="col-md-6 Without">
+        <button type="button" class="btn btn-primary"  routerLink="/Alcoholicas">Con Alcohol</button>
+        <div class="container content ">
+        <h3>Frias</h3>
+        <div class="row">
+                <div class="col-md-6 drink-content" *ngFor="let Frias of frias">
+                       
+             <img [src]='Frias.url' />
+             <div class="detail-drink">
+                    <h4> {{Frias.nombre}} </h4>
+                    <div class="detail-out">
+                        <p>{{Frias.nacionalidad}} </p>
+                        <p>{{Frias.clasificacion}} </p>
+                        <h4>{{Frias.precio}}</h4>
+                    </div>
+
+                    
+                    
+                      </div>
+        </div>
+        
+</div>
+</div>
+
+</div>
+
+</div>
+
+       
+      
+</div>
