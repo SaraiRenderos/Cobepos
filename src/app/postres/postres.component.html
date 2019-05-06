@@ -1,3 +1,16 @@
-<p>
-  postres works!
-</p>
+<div class="container body" >
+    <h3  class="Title">Postres</h3>
+<div class="row content" >
+  
+    <div class="card  col-md-3" style="width: 18rem;"  *ngFor="let Postres of postres">
+        <img [src]="Postres.url"class="card-img-top" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{Postres.nombre}}</h5>
+          <p class="card-text"> Tipo: {{Postres.tipo}}</p>
+          <p class="card-text"> Especialidad: {{Postres.especialidad}}</p>
+          <h5>{{Postres.precio}}</h5>
+        </div>
+      </div>
+  </div>
+  </div>
+ 

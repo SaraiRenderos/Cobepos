@@ -10,6 +10,7 @@ import { BebidasComponent } from './bebidas/bebidas.component';
 import { PostresComponent } from './postres/postres.component';
 import { ComentariosComponent } from './comentarios/comentarios.component';
 import { AlcolicasComponent } from './alcolicas/alcolicas.component';
+import { ExtrasComponent } from './extras/extras.component';
 const  appRoutes: Routes = [
   {path:'', component: HomeComponent},
   {path:'Home', component: HomeComponent},
@@ -28,7 +29,8 @@ const  appRoutes: Routes = [
     BebidasComponent,
     PostresComponent,
     ComentariosComponent,
-    AlcolicasComponent
+    AlcolicasComponent,
+    ExtrasComponent
   ],
   imports: [
     BrowserModule,

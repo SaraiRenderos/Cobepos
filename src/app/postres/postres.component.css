@@ -1,0 +1,33 @@
+
+.body{
+  margin-top: 15%;
+  background: chocolate;
+border-radius: 10px;
+}
+.content{
+  background: rgba(255, 255, 255, 0.7)
+}
+.card{
+  border: 10px 10px 0 0;
+  border: solid chocolate;
+  
+}
+img{
+  margin: 5%;
+
+border-radius: 10px;
+}
+ img:hover{
+  transform: scale(1.15);
+}
+.Title{
+  font-family: 'Merienda';
+  color: aliceblue;
+}
+.card-title{
+  color: chocolate;
+  font-family: 'Fredoka One';
+}
+.font{
+  
+}

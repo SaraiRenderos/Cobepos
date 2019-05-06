@@ -114,7 +114,25 @@ export class ServicioService {
     { id: 4 , nombre:"Cervesa", clasificacion: "Alcolicas", nacionalidad:"Egipto",precio: "$"   ,url: './assets/bebidas/Alcoholicas/cerveza.png' },
     { id: 5 , nombre:"Smirnoff", clasificacion: "Alcolicas", nacionalidad:"Estados Unidos",precio: "$"   ,url: './assets/bebidas/Alcoholicas/smirno.jpg' }
   ];
+  Postres:any = [
+    { id: 1 , nombre:"Buñuelos de manzana", tipo: "Frito", especialidad:"",precio: "$",url: './assets/postres/calientes/buñuelos.png' },
+    { id: 2 , nombre:"Pie de helado de limón", tipo: "Helado", especialidad:"",precio: "$"  ,url: './assets/postres/helado/HeladoLimon.jpg '},
+    { id: 3 , nombre:"Tarta de Cafe", tipo: "Frio", 1:"", precio: "$"   ,url: './assets/postres/frios/TartaCafe.jpeg '},
+    { id: 4 , nombre:"Brownie con helado de vainilla", tipo: "Helado", especialidad:"",precio: "$"   ,url: './assets/postres/helado/brownie.jpg' },
+    { id: 5 , nombre:"Coulant de chocolate", tipo: "Caliente", especialidad:" ",precio: "$"   ,url: './assets/postres/calientes/coulat.jpg' },
+    { id: 6 , nombre:"Tiramisu", tipo: "Frio", especialidad:"",precio: "$"    ,url: './assets/postres/frios/tiramisu.jpg' },
+    { id: 7 , nombre:"Tarta de queso", tipo: "Frio", especialidad:"",precio: "$"  ,url: './assets/postres/frios/TartaQueso.jpg '},
+    { id: 8 , nombre:"Banana Split", tipo: "Helado", especialidad:"", precio: "$"   ,url: './assets/postres/helado/banana.jpg '},
+    { id: 9 , nombre:"Castañas en almíbar de miel", tipo: "Calientes", especialidad:"",precio: "$"   ,url: './assets/postres/calientes/castaña.jpg' },
+    { id: 10 , nombre:"Bombas fritas", tipo: "Frito", especialidad:" ",precio: "$"   ,url: './assets/postres/fritos/bombaFrita.jpeg' },
+    { id: 11, nombre:"Sorbete de mango", tipo: "Helado", especialidad:"",precio: "$"    ,url: './assets/postres/helado/sorbrete-de-mango.jpg' },
+    { id: 12 , nombre:"Pastel de manzana caliente", tipo: "Caliente", especialidad:"",precio: "$"  ,url: './assets/postres/calientes/pastelManzana.jpg '},
+    { id: 13, nombre:"Helado frito", tipo: "Frito", especialidad:"", precio: "$"   ,url: './assets/postres/fritos/helado-frito.jpg '},
+    { id: 14, nombre:"Pancakes", tipo: "Caliente", especialidad:"",precio: "$"   ,url: './assets/postres/calientes/pancakes.jpg' },
+    { id: 15 , nombre:"Leche frita ", tipo: "Frito", especialidad:" ",precio: "$"   ,url: './assets/postres/fritos/leche-frita.jpg' },
+    { id: 16 , nombre:"Rosquillas fritas", tipo: "Frito", especialidad:" ",precio: "$"   ,url: './assets/postres/fritos/rosquillas-fritas.jpg' }
 
+  ];
 
 public getPlatos(){
   return this.Ofertas;
@@ -148,5 +166,8 @@ public getFrias(){
 }
 public getAlcoholica(){
   return this.Alcolicas;
+}
+public getPostres(){
+  return this.Postres;
 }
 }
