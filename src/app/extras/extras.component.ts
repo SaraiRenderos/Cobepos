@@ -8,9 +8,9 @@ import { ServicioService } from '../servicio.service';
 })
 export class ExtrasComponent implements OnInit {
 
-  estras = null;
+  extras = null;
   constructor(private servicioService: ServicioService) {
-    this.estras = servicioService.getPostres();
+    this.extras = servicioService.getExtras();
     
     
   

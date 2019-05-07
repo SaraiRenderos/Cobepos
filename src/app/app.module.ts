@@ -18,7 +18,9 @@ const  appRoutes: Routes = [
   {path:'Bebidas', component: BebidasComponent},
   {path:'Postres', component: PostresComponent},
   {path:'Comentarios', component: ComentariosComponent},
-  {path:'Alcoholicas', component: AlcolicasComponent}
+  {path:'Alcoholicas', component: AlcolicasComponent},
+  {path:'Extras', component: ExtrasComponent}
+
 ];
 
 @NgModule({

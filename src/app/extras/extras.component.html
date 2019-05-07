@@ -1,13 +1,12 @@
 <div class="container body" >
-    <h3  class="Title">Postres</h3>
+    <h3  class="Title">Extras</h3>
 <div class="row content" >
   
-    <div class="card  col-md-3" style="width: 18rem;"  *ngFor="let Extras of postres">
+    <div class="card  col-md-3" style="width: 18rem;"  *ngFor="let Extras of extras">
         <img [src]="Extras.url"class="card-img-top" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{Extras.nombre}}</h5>
-          <p class="card-text"> Tipo: {{Extras.tipo}}</p>
-          <p class="card-text"> Especialidad: {{Extras.especialidad}}</p>
+          <p class="card-text"> Cantidad: {{Extras.cantidad}}</p>
           <h5>{{Extras.precio}}</h5>
         </div>
       </div>

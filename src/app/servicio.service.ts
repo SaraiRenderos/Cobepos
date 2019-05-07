@@ -60,7 +60,7 @@ export class ServicioService {
     { id: 10 , nombre:"Menudo", clasificacion: "plato fuerte", precio: "$3.20", cantidad: "12 onzas " ,  ingredientes:"Caldo de panza de res, maíz y chiles" ,url:'./assets/mexicana/menudo.jpg'  }
   ];
   China:any = [
-    { id: 1 , nombre:"Pollo Kung Pao", clasificacion: "Plato fuerte", precio: "$8.55", cantidad: "1" ,  ingredientes:"pechuga de pollo , salsa de soya , cebolletas, salasa hoisin, hojuelas de pimienta roja molida, pimiento rojo y verde  " ,url:'./assets/china/polloKungpao.jpg'  },
+    { id: 1 , nombre:"Pollo Kung Pao", clasificacion: "Plato fuerte", precio: "$8.55", cantidad: "1" ,  ingredientes:"pechuga de pollo , salsa de soya , cebolletas, salasa hoisin, hojuelas de pimienta roja molida, pimiento rojo y verde  " ,url:'./assets/china/pollokungpao.jpg'  },
     { id: 2 , nombre:"Pollo en salsa de Fresa naranja ", clasificacion: "Plato fuerte", precio: "$8.50", cantidad: "1" ,  ingredientes:" pechigas de pollo , naranja, maicena, caldo de pollo, salsa de soya  " ,url:'./assets/china/roja.jpeg'  },
     { id: 3 , nombre:"Pollo con Almendras al estilo Chino ", clasificacion: "Plato fuerte", precio: "$8.50", cantidad: "1 " ,  ingredientes:"Pechugas de pollo , almendras peladas, champiñones , pimiento verde, zanahoria,brotes de soya,salsa de soya  " ,url:'./assets/china/pollo-almendras.jpg'  },
     { id: 4 , nombre:"Lomito de Res al Estilo Mongolia", clasificacion: "Plato fuerte", precio: "$8.25", cantidad: "1" ,  ingredientes:"carne de res, salsa de soya, cebolla, gengibre, brócoli, brotes de soya   " ,url:'./assets/china/lomito.jpg'  },
@@ -133,7 +133,23 @@ export class ServicioService {
     { id: 16 , nombre:"Rosquillas fritas", tipo: "Frito", especialidad:" ",precio: "$"   ,url: './assets/postres/fritos/rosquillas-fritas.jpg' }
 
   ];
-
+  Extras:any = [
+    { id: 1 , nombre:"Cebolla saltiada ", cantidad: "1 Ración", precio: "$ 3"   ,url: './assets/extras/cebolla.jpg '},
+    { id: 2 , nombre:"Carpaccio de salmón", cantidad: "1 Ración",precio: "$9"  ,url: './assets/extras/Carpaccio.jpg '},
+    { id: 3 , nombre:"Calamarin frito", cantidad: "6",precio: "$ 7"    ,url: './assets/extras/calamarin.jpg' },
+    { id: 4 , nombre:"Ensalada fresca", cantidad: "1 Ración",precio: "$3"   ,url: './assets/extras/ensalada-fresca.jpg' },
+    { id: 5 , nombre:"Ensalada de pollo", cantidad: "1",precio: "$3"   ,url: './assets/extras/ensaladaRepollo.png' },
+    { id: 5 , nombre:"Galletas de la fortuna", cantidad: "2",precio: "$2"   ,url: './assets/extras/galletasFrotuna.jpg' },
+    { id: 5 , nombre:"Guacamole.jpg", cantidad: "1 Ración",precio: "$2"   ,url: './assets/extras/guacamole.jpg' },
+    { id: 5 , nombre:"Nuegados fritos", cantidad: "3",precio: "$1"   ,url: './assets/extras/NuegadosFritos.jpg' },
+    { id: 5 , nombre:"Palitroque", cantidad: "5",precio: "$3"   ,url: './assets/extras/Palitroques.png' },
+    { id: 5 , nombre:"Pan ", cantidad: "1",precio: "$0.75"   ,url: './assets/extras/Pan.jpg' },
+    { id: 5 , nombre:"Pan con ajo", cantidad: "4",precio: "$5"   ,url: './assets/extras/pan_ajo.png' },
+    { id: 5 , nombre:"Patatas", cantidad: "1 Ración",precio: "$2"   ,url: './assets/extras/patatas-fritas.jpg' },
+    { id: 5 , nombre:"RollitosPrimavera.jpg", cantidad: "5",precio: "$4"   ,url: './assets/extras/rollitosPrimavera.jpg' },
+    { id: 5 , nombre:"Tostaditas de maiz", cantidad: "5",precio: "$1"   ,url: './assets/extras/tostadas.jpg' },
+    { id: 5 , nombre:"Wantán", cantidad: "12",precio: "$4"   ,url: './assets/extras/wantan-.jpg' }
+  ];
 public getPlatos(){
   return this.Ofertas;
 }
@@ -169,5 +185,8 @@ public getAlcoholica(){
 }
 public getPostres(){
   return this.Postres;
+}
+public getExtras(){
+  return this.Extras;
 }
 }
