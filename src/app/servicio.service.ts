@@ -1,11 +1,21 @@
 import { Injectable } from '@angular/core';
+import { compileNgModule } from '@angular/core/src/render3/jit/module';
+import { AngularFirestore } from"@angular/fire/firestore";
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServicioService {
+  constructor(private afDB:AngularFirestore){}
 
-  
+  getComentarios(){
+    return this.afDB.collection('/Comentarios');
+  }
+  saveComentario(comentario){
+    this.afDB.collection('Comentarios').doc(comentario.id.toString()).set(comentario); 
+console.log(comentario)
+  }
+ 
   Ofertas:any = [
     {  id: 1, nombre:'Camarón Kung Pao' ,   precio: '$8' ,ingredientes:'Camarones grandes, salsa de soja, chiles secos, pimetón verde, jengibre ' , url:'./assets/china/camaron-kungp.jpg'},
     { id:2 , nombre:'Sopa de cebolla ' ,  precio: '$ 6' ,ingredientes:'Cebolla caramelizada, carne de res  y trocitos de pan ',url:'./assets/francia/Sopa-de-cebolla.jpg' },
@@ -150,6 +160,8 @@ export class ServicioService {
     { id: 5 , nombre:"Tostaditas de maiz", cantidad: "5",precio: "$1"   ,url: './assets/extras/tostadas.jpg' },
     { id: 5 , nombre:"Wantán", cantidad: "12",precio: "$4"   ,url: './assets/extras/wantan-.jpg' }
   ];
+
+
 public getPlatos(){
   return this.Ofertas;
 }

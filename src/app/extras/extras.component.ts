@@ -6,7 +6,7 @@ import { ServicioService } from '../servicio.service';
   templateUrl: './extras.component.html',
   styleUrls: ['./extras.component.css']
 })
-export class ExtrasComponent implements OnInit {
+export class ExtrasComponent {
 
   extras = null;
   constructor(private servicioService: ServicioService) {

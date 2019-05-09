@@ -1,0 +1,45 @@
+.body{
+    margin-top: 15%;
+    padding: 5%;
+}
+.comentar{
+  display:block;
+  padding: 5%;
+    background: aliceblue;
+
+}
+.comentarios{
+ 
+  background: aliceblue;
+  margin-top: 5%;
+  padding: 5%;
+}
+.hidden{
+  display:none;
+}
+.col{
+  background: white;
+  border-radius: 10px;
+  padding: 2%;
+  margin-bottom: 2%;
+
+}
+h2{
+  color: chocolate;
+}
+h4{
+  color: #b7774af2;
+  font-family: -webkit-pictograph;
+}
+p{
+  font-size: small;
+  color: #3f73a0;
+}
+label{
+  font-size: 130%;
+    color: chocolate;
+}
+button{
+  border: none;
+  background: chocolate;
+}

@@ -1,3 +1,23 @@
-<p>
-  comentarios works!
-</p>
+<div class="container body" id="body">
+  <div class="container comentar">
+  <label for="">Nombre</label>
+  <input type="text" class="form-control" [(ngModel)]="comment.nombre" >
+  <br>
+  <label for="">Comentario</label>
+  <textarea class="form-control" [(ngModel)]="comment.comentario"  ></textarea>
+  <br>
+  <button type="submit" (click)="getComentario()" class="btn btn-primary">Enviar</button>
+  </div>
+  <div class="container comentarios">
+    <h2>Comentarios</h2>
+    <br>
+<div class="row"  *ngFor="let Usuario of usuario">
+<div class="col ">
+  <h4>{{Usuario.nombre| titlecase }}</h4>
+  <h5>{{Usuario.comentario | titlecase}} </h5>
+  <p>{{Usuario.id|date:'short'}}</p>
+</div>
+</div>
+  </div>
+ 
+</div>

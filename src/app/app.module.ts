@@ -11,6 +11,14 @@ import { PostresComponent } from './postres/postres.component';
 import { ComentariosComponent } from './comentarios/comentarios.component';
 import { AlcolicasComponent } from './alcolicas/alcolicas.component';
 import { ExtrasComponent } from './extras/extras.component';
+import { FormsModule }   from '@angular/forms';
+
+import { ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+
 const  appRoutes: Routes = [
   {path:'', component: HomeComponent},
   {path:'Home', component: HomeComponent},
@@ -22,6 +30,21 @@ const  appRoutes: Routes = [
   {path:'Extras', component: ExtrasComponent}
 
 ];
+export const environment = {
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyAYf9bIdL6IdsGH29LlpQu69DeCyyEyin4",
+    authDomain: "cobepos.firebaseapp.com",
+    databaseURL: "https://cobepos.firebaseio.com",
+    projectId: "cobepos",
+    storageBucket: "cobepos.appspot.com",
+    messagingSenderId: "196783109202",
+    appId: "1:196783109202:web:c19b1fa43acee254"
+  }
+};
+
+
+
 
 @NgModule({
   declarations: [
@@ -33,11 +56,18 @@ const  appRoutes: Routes = [
     ComentariosComponent,
     AlcolicasComponent,
     ExtrasComponent
+   
   ],
   imports: [
+    ReactiveFormsModule,
+    FormsModule,
     BrowserModule,
     AppRoutingModule, 
-   RouterModule.forRoot(appRoutes)
+    AngularFireModule.initializeApp(environment.firebase, 'Cobepos'), 
+    AngularFirestoreModule,
+    AngularFireAuthModule, 
+    AngularFireStorageModule,
+    RouterModule.forRoot(appRoutes)
 
   ],
   providers: [ServicioService],
