@@ -1,8 +1,9 @@
 <div class=" container body">
-<div class="row">
-       
+<div class="row line">
+                <button type="button" class="btn btn-primary"  routerLink="/Alcoholicas">Con Alcohol</button>
+                <button type="button" class="btn btn-primary"  routerLink="/Bebidas">Sin Alcohol</button>
 <div class="col-md-6 Without">
-        <button type="button" class="btn btn-primary"  routerLink="/Bebidas">Sin Alcohol</button>
+               
         <div class="container content ">
         <h3>Calientes</h3>
         <div class="row">
@@ -10,11 +11,11 @@
                        
              <img [src]='Calientes.url' />
              <div class="detail-drink">
-                    <h4> {{Calientes.nombre}} </h4>
+                    <p> {{Calientes.nombre}} </p>
                     <div class="detail-out">
-                        <p>{{Calientes.nacionalidad}} </p>
-                        <p></p>
-                        <h4>{{Calientes.precio}}</h4>
+                        <p> Nacionalidad : {{Calientes.nacionalidad}} </p>
+                       
+                        <p>{{Calientes.precio}}</p>
                     </div>
 
                     
@@ -27,7 +28,7 @@
 
 </div>
 <div class="col-md-6 Without">
-        <button type="button" class="btn btn-primary"  routerLink="/Alcoholicas">Con Alcohol</button>
+      
         <div class="container content ">
         <h3>Frias</h3>
         <div class="row">
@@ -35,11 +36,11 @@
                        
              <img [src]='Frias.url' />
              <div class="detail-drink">
-                    <h4> {{Frias.nombre}} </h4>
+                    <p> {{Frias.nombre}} </p>
                     <div class="detail-out">
-                        <p>{{Frias.nacionalidad}} </p>
-                        <p>{{Frias.clasificacion}} </p>
-                        <h4>{{Frias.precio}}</h4>
+                        <p>  Nacionalidad : {{Frias.nacionalidad}} </p>
+                        
+                        <p>{{Frias.precio}}</p>
                     </div>
 
                     

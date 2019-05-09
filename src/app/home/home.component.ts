@@ -7,10 +7,13 @@ import { ServicioService } from '../servicio.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent{
-
+  img = null;
   Ofertas = null;
+  string = null;
   constructor(private servicioService: ServicioService) {
     this.Ofertas = servicioService.getPlatos();
+    this.img = servicioService.getContactos();
+    this.string = servicioService.getContactos();
    }
 
   

@@ -13,14 +13,15 @@
     color: white;
     text-align: center;
 }
-.long-phrase h3{
-    padding-top: 25%;
+.long-phrase h3 {
+    padding-top: 15%;
     font-size: 265%;
     font-family: 'Rubik';
 }
-h3 .text-place{
+ .text-place{
     font-family: 'Kaushan Script';
-
+    font-size: 150%;
+    color:white;
 }
 .title-offers{
     padding-top: 0;
@@ -108,4 +109,67 @@ padding-right: 5%;
    
 .menu-offers{
     padding-right: 10%;
+}
+.contact{
+    text-align: center;
+    background: chocolate;
+    color: white;
+    padding: 1%;
+}
+
+.horarios{
+    background: black;
+    
+}
+.horarios h2{
+    border-bottom:2px solid chocolate;
+    color: white;
+}
+.horarios h4{
+color:chocolate;
+display:flex;
+}
+.hora{
+    color: aliceblue;
+
+}
+.horarios , .contactos{
+    margin:0;
+    max-width:100%;
+}
+@media (max-width: 870px) {
+    .long-phrase h3 {
+       
+        font-size: 205%;
+  }
+
+  .offers {
+    display: block;}
+}
+@media (max-width: 645px){
+    .long-phrase h3 {
+       
+        font-size: 105%;
+        padding-top:20%;
+  }
+}
+@media (max-width: 525px){
+    .long-phrase h3 {
+       
+        font-size: 85%;
+        padding-top:30%;
+  }  
+}
+@media (max-width: 405px){
+    .long-phrase h3 {
+       
+        font-size: 85%;
+        padding-top:40%;
+  } 
+  .imgMain{
+    height: 365px;
+} 
+.contact img{
+width: 15%;
+}
 }

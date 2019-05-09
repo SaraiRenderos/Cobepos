@@ -15,19 +15,24 @@ export class ServicioService {
     this.afDB.collection('Comentarios').doc(comentario.id.toString()).set(comentario); 
 console.log(comentario)
   }
- 
+
+  Img:any =[
+    {url: './assets/contactos/correo.png' , string:'Cobepos@gmail.com'},
+    {url: './assets/contactos/ubicación.png' , string:' - San Salvador  - Santa Tecla  - MetroCentro '},
+    {url: './assets/contactos/telefono.png' , string:'7259-4339'}
+  ];
   Ofertas:any = [
-    {  id: 1, nombre:'Camarón Kung Pao' ,   precio: '$8' ,ingredientes:'Camarones grandes, salsa de soja, chiles secos, pimetón verde, jengibre ' , url:'./assets/china/camaron-kungp.jpg'},
-    { id:2 , nombre:'Sopa de cebolla ' ,  precio: '$ 6' ,ingredientes:'Cebolla caramelizada, carne de res  y trocitos de pan ',url:'./assets/francia/Sopa-de-cebolla.jpg' },
-    { id: 3, nombre:'Lasaña' ,  precio: '$ 3' ,ingredientes:'Champiñones, carne picada, calabacín grande,salsa de tomate y leche"',url:'./assets/comida/italiana1.jpg' }
+    {  id: 1, nombre:'Camarón Kung Pao' ,   precio: '$10' ,ingredientes:'Camarones grandes, salsa de soja, chiles secos, pimetón verde, jengibre ' , url:'./assets/china/camaron-kungp.jpg'},
+    { id:2 , nombre:'Sopa de cebolla ' ,  precio: '$ 4' ,ingredientes:'Cebolla caramelizada, carne de res  y trocitos de pan ',url:'./assets/francia/Sopa-de-cebolla.jpg' },
+    { id: 3, nombre:'Lasaña' ,  precio: '$ 7' ,ingredientes:'Champiñones, carne picada, calabacín grande,salsa de tomate y leche"',url:'./assets/comida/italiana1.jpg' }
   ];
 
   Italia:any = [
-    { id: 1 , nombre:"Bruschetta", clasificacion: "Entrada", precio: "$6.55", cantidad: "5" ,  ingredientes:"Baquetas francesas con queso mozzarela con una deliciosa salsa de tomate acompañada de unas hojitas de albahaca" ,url:'./assets/italia/Bruschetta.jpeg'  },
-    { id: 2 , nombre:"Berenjenas a la parmesana", clasificacion: "Plato fuerte", precio: "$15", cantidad: "2" ,  ingredientes:"Rodajas de berenjena , queso parmesado, queso mozzarela, salsa de tomate" ,url:'./assets/italia/berenjena.jpg'  },
-    { id: 3 , nombre:"Lasaña", clasificacion: "Plato fuerte", precio: "$10.50", cantidad: "1 Porción" ,  ingredientes:"Champiñones, carne picada, calabacín grande,salsa de tomate y leche" ,url:'./assets/italia/lasaña.jpg'  },
-    { id: 4 , nombre:"Canelones", clasificacion: "Plato fuerte", precio: "$5.65", cantidad: "8" ,  ingredientes:"Espinaca,pasas,piñones,leche" ,url:'./assets/italia/canelones.jpg'  },
-    { id: 5 , nombre:"Ravioli", clasificacion: "Entrada", precio: "$6.25", cantidad: "10" ,  ingredientes:"Quesso,ricotta,salsa de tomate,tomillo fresco, Albahaca" ,url:'./assets/italia/ravioli.jpg'  },
+    { id: 1 , nombre:"Bruschetta", clasificacion: "Entrada", precio: "$6.55", cantidad: "5 Porciones" ,  ingredientes:"Baquetas francesas con queso mozzarela con una deliciosa salsa de tomate acompañada de unas hojitas de albahaca" ,url:'./assets/italia/Bruschetta.jpeg'  },
+    { id: 2 , nombre:"Berenjenas a la parmesana", clasificacion: "Plato fuerte", precio: "$11", cantidad: "Ración" ,  ingredientes:"Rodajas de berenjena , queso parmesado, queso mozzarela, salsa de tomate" ,url:'./assets/italia/berenjena.jpg'  },
+    { id: 3 , nombre:"Lasaña", clasificacion: "Plato fuerte", precio: "$7", cantidad: "1 Porción" ,  ingredientes:"Champiñones, carne picada, calabacín grande,salsa de tomate y leche" ,url:'./assets/italia/lasaña.jpg'  },
+    { id: 4 , nombre:"Canelones", clasificacion: "Plato fuerte", precio: "$8.65", cantidad: "8" ,  ingredientes:"Espinaca,pasas,piñones,leche" ,url:'./assets/italia/canelones.jpg'  },
+    { id: 5 , nombre:"Ravioli", clasificacion: "Entrada", precio: "$8.25", cantidad: "10" ,  ingredientes:"Quesso,ricotta,salsa de tomate,tomillo fresco, Albahaca" ,url:'./assets/italia/ravioli.jpg'  },
     { id: 6 , nombre:"Panzerotti", clasificacion: "Entrada", precio: "$5.50", cantidad: "6" ,  ingredientes:"Queso mozzarela , salsa de tomate apuliano, orégano" ,url:'./assets/italia/Panzerotti.jpg'  },
     { id: 7 , nombre:"Espaguetis", clasificacion: "Plato fuerte", precio: "$7.50", cantidad: "1 porción" ,  ingredientes:"Salmón ahumado,romero,salsa de tomate ,cebolla salteada" ,url:'./assets/italia/espaguetis.jpg'  },
     { id: 8 , nombre:"Risotto agli spinaci", clasificacion: "Platillo extra", precio: "$3.75", cantidad: "1 porción" ,  ingredientes:"Espinaca, queso parmesano, guindilla, cebolla" ,url:'./assets/italia/Risotto.jpg'  },
@@ -106,41 +111,41 @@ console.log(comentario)
     { id: 10 , nombre:"Canoas", clasificacion: "Plato fuerte", precio: "$1", cantidad: "1" ,  ingredientes:" Muslos de pato, o cuartos traseros, grasa de oca o manteca refinadas, sal gruesa " ,url:'./assets/salvador/canoas.JPG'  }
   ];
   Calientes:any = [
-    { id: 1 , nombre:"Café", clasificacion: "Caliente", nacionalidad:"",precio: "$"  , url:'./assets/bebidas/calientes/cafe.jpg' },
-    { id: 2 , nombre:"Chocolate", clasificacion: "Caliente", nacionalidad:"",precio: "$", url:'./assets/bebidas/calientes/chocolate.jpg' },
-    { id: 3 , nombre:"Té", clasificacion: "Caliente", nacionalidad:"", precio: "$" , url:'./assets/bebidas/calientes/té.jpg' },
-    { id: 4 , nombre:"Capuchino", clasificacion: "Caliente", nacionalidad:"",precio: "$" , url:'./assets/bebidas/calientes/capuchino.jpg' }
+    { id: 1 , nombre:"Café", clasificacion: "Caliente", nacionalidad:"África",precio: "$ 1.75"  , url:'./assets/bebidas/calientes/cafe.jpg' },
+    { id: 2 , nombre:"Chocolate", clasificacion: "Caliente", nacionalidad:"Mexico",precio: "$ 1.75", url:'./assets/bebidas/calientes/chocolate.jpg' },
+    { id: 3 , nombre:"Té", clasificacion: "Caliente", nacionalidad:"China", precio: "$ 1.75" , url:'./assets/bebidas/calientes/té.jpg' },
+    { id: 4 , nombre:"Capuchino", clasificacion: "Caliente", nacionalidad:"Italia",precio: "$ 2.50" , url:'./assets/bebidas/calientes/capuchino.jpg' }
   ];
   Frias:any = [
-    { id: 1 , nombre:"Frozen", clasificacion: "Frias", nacionalidad:"",precio: "$"  , url: './assets/bebidas/frias/Frozen.jpg'},
-    { id: 2 , nombre:"Jugos naturales", clasificacion: "Frias", nacionalidad:"",precio: "$", url: './assets/bebidas/frias/JugosNaturales.jpg'},
-    { id: 3 , nombre:"Té frio", clasificacion: "Frias", nacionalidad:"", precio: "$" , url: './assets/bebidas/frias/te.jpg'},
-    { id: 4 , nombre:"Licuados", clasificacion: "Frias", nacionalidad:"",precio: "$" , url: './assets/bebidas/frias/lucuado.jpeg'}
+    { id: 1 , nombre:"Frozen", clasificacion: "Frias", nacionalidad:"Mexico",precio: "$ 2.50"  , url: './assets/bebidas/frias/Frozen.jpg'},
+    { id: 2 , nombre:"Jugos naturales", clasificacion: "Frias", nacionalidad:"",precio: "$ 2", url: './assets/bebidas/frias/JugosNaturales.jpg'},
+    { id: 3 , nombre:"Té frio", clasificacion: "Frias", nacionalidad:"China", precio: "$ 1.75" , url: './assets/bebidas/frias/te.jpg'},
+    { id: 4 , nombre:"Licuados", clasificacion: "Frias", nacionalidad:"Argentina",precio: "$ 2.50" , url: './assets/bebidas/frias/lucuado.jpeg'}
   ];
   Alcolicas:any = [
-    { id: 1 , nombre:"Vodka", clasificacion: "Alcolicas", nacionalidad:"Rusia",precio: "$5"    ,url: './assets/bebidas/Alcoholicas/vodka.jpg' },
-    { id: 2 , nombre:"Tequila", clasificacion: "Alcolicas", nacionalidad:"Mexico",precio: "$"  ,url: './assets/bebidas/Alcoholicas/Tequila.jpg '},
-    { id: 3 , nombre:"Vino", clasificacion: "Alcolicas", nacionalidad:"Italia", precio: "$"   ,url: './assets/bebidas/Alcoholicas/vino.jpg '},
-    { id: 4 , nombre:"Cervesa", clasificacion: "Alcolicas", nacionalidad:"Egipto",precio: "$"   ,url: './assets/bebidas/Alcoholicas/cerveza.png' },
-    { id: 5 , nombre:"Smirnoff", clasificacion: "Alcolicas", nacionalidad:"Estados Unidos",precio: "$"   ,url: './assets/bebidas/Alcoholicas/smirno.jpg' }
+    { id: 1 , nombre:"Vodka", clasificacion: "Alcolicas", nacionalidad:"Rusia",precio: "$4.30"    ,url: './assets/bebidas/Alcoholicas/vodka.jpg' },
+    { id: 2 , nombre:"Tequila", clasificacion: "Alcolicas", nacionalidad:"Mexico",precio: "$5.50"  ,url: './assets/bebidas/Alcoholicas/Tequila.jpg '},
+    { id: 3 , nombre:"Vino", clasificacion: "Alcolicas", nacionalidad:"Italia", precio: "$5.25"   ,url: './assets/bebidas/Alcoholicas/vino.jpg '},
+    { id: 4 , nombre:"Cervesa", clasificacion: "Alcolicas", nacionalidad:"Egipto",precio: "$3.50"   ,url: './assets/bebidas/Alcoholicas/cerveza.png' },
+    { id: 5 , nombre:"Ron", clasificacion: "Alcolicas", nacionalidad:"Estados Unidos",precio: "$7.50"   ,url: './assets/bebidas/Alcoholicas/ron.jpg' }
   ];
   Postres:any = [
-    { id: 1 , nombre:"Buñuelos de manzana", tipo: "Frito", especialidad:"",precio: "$",url: './assets/postres/calientes/buñuelos.png' },
-    { id: 2 , nombre:"Pie de helado de limón", tipo: "Helado", especialidad:"",precio: "$"  ,url: './assets/postres/helado/HeladoLimon.jpg '},
-    { id: 3 , nombre:"Tarta de Cafe", tipo: "Frio", 1:"", precio: "$"   ,url: './assets/postres/frios/TartaCafe.jpeg '},
-    { id: 4 , nombre:"Brownie con helado de vainilla", tipo: "Helado", especialidad:"",precio: "$"   ,url: './assets/postres/helado/brownie.jpg' },
-    { id: 5 , nombre:"Coulant de chocolate", tipo: "Caliente", especialidad:" ",precio: "$"   ,url: './assets/postres/calientes/coulat.jpg' },
-    { id: 6 , nombre:"Tiramisu", tipo: "Frio", especialidad:"",precio: "$"    ,url: './assets/postres/frios/tiramisu.jpg' },
-    { id: 7 , nombre:"Tarta de queso", tipo: "Frio", especialidad:"",precio: "$"  ,url: './assets/postres/frios/TartaQueso.jpg '},
-    { id: 8 , nombre:"Banana Split", tipo: "Helado", especialidad:"", precio: "$"   ,url: './assets/postres/helado/banana.jpg '},
-    { id: 9 , nombre:"Castañas en almíbar de miel", tipo: "Calientes", especialidad:"",precio: "$"   ,url: './assets/postres/calientes/castaña.jpg' },
-    { id: 10 , nombre:"Bombas fritas", tipo: "Frito", especialidad:" ",precio: "$"   ,url: './assets/postres/fritos/bombaFrita.jpeg' },
-    { id: 11, nombre:"Sorbete de mango", tipo: "Helado", especialidad:"",precio: "$"    ,url: './assets/postres/helado/sorbrete-de-mango.jpg' },
-    { id: 12 , nombre:"Pastel de manzana caliente", tipo: "Caliente", especialidad:"",precio: "$"  ,url: './assets/postres/calientes/pastelManzana.jpg '},
-    { id: 13, nombre:"Helado frito", tipo: "Frito", especialidad:"", precio: "$"   ,url: './assets/postres/fritos/helado-frito.jpg '},
-    { id: 14, nombre:"Pancakes", tipo: "Caliente", especialidad:"",precio: "$"   ,url: './assets/postres/calientes/pancakes.jpg' },
-    { id: 15 , nombre:"Leche frita ", tipo: "Frito", especialidad:" ",precio: "$"   ,url: './assets/postres/fritos/leche-frita.jpg' },
-    { id: 16 , nombre:"Rosquillas fritas", tipo: "Frito", especialidad:" ",precio: "$"   ,url: './assets/postres/fritos/rosquillas-fritas.jpg' }
+    { id: 1 , nombre:"Buñuelos de manzana", tipo: "Frito", especialidad:"5 Unidades",precio: "$ 7.50",url: './assets/postres/calientes/buñuelos.png' },
+    { id: 2 , nombre:"Pie de helado de limón", tipo: "Helado", especialidad:" 1 Porción",precio: "$ 3.50"  ,url: './assets/postres/helado/HeladoLimon.jpg '},
+    { id: 3 , nombre:"Tarta de Cafe", tipo: "Frio",  especialidad:" 1 Porción", precio: "$ 2.80"   ,url: './assets/postres/frios/TartaCafe.jpeg '},
+    { id: 4 , nombre:"Brownie con helado de vainilla", tipo: "Helado", especialidad:" 1 Porción ",precio: "$3.50"   ,url: './assets/postres/helado/brownie.jpg' },
+    { id: 5 , nombre:"Coulant de chocolate", tipo: "Caliente", especialidad:" 1 Porción ",precio: "$ 2.25"   ,url: './assets/postres/calientes/coulat.jpg' },
+    { id: 6 , nombre:"Tiramisu", tipo: "Frio", especialidad:"1 Porción",precio: "$ 4.99"    ,url: './assets/postres/frios/tiramisu.jpg' },
+    { id: 7 , nombre:"Tarta de queso", tipo: "Frio", especialidad:"1 Porción ",precio: "$ 3.50"  ,url: './assets/postres/frios/TartaQueso.jpg '},
+    { id: 8 , nombre:"Banana Split", tipo: "Helado", especialidad:"1 Ración ", precio: "$ 2.80"   ,url: './assets/postres/helado/banana.jpg '},
+    { id: 9 , nombre:"Castañas en almíbar de miel", tipo: "Calientes", especialidad:" 5 Unidades",precio: "$ 6.75"   ,url: './assets/postres/calientes/castaña.jpg' },
+    { id: 10 , nombre:"Bombas fritas", tipo: "Frito", especialidad:" 3 Unidades",precio: "$ 3.75"   ,url: './assets/postres/fritos/bombaFrita.jpeg' },
+    { id: 11, nombre:"Sorbete de mango", tipo: "Helado", especialidad:" 1 Porción",precio: "$ 3.20"    ,url: './assets/postres/helado/sorbrete-de-mango.jpg' },
+    { id: 12 , nombre:"Pastel de manzana caliente", tipo: "Caliente", especialidad:"4 Unidades",precio: "$ 7.20"  ,url: './assets/postres/calientes/pastelManzana.jpg '},
+    { id: 13, nombre:"Helado frito", tipo: "Frito", especialidad:" 1 Unidad", precio: "$ 4.20"   ,url: './assets/postres/fritos/helado-frito.jpg '},
+    { id: 14, nombre:"Pancakes", tipo: "Caliente", especialidad:" 3 Unidades",precio: "$ 5.50"   ,url: './assets/postres/calientes/pancakes.jpg' },
+    { id: 15 , nombre:"Leche frita ", tipo: "Frito", especialidad:" 4 Unidades",precio: "$ 5.50"   ,url: './assets/postres/fritos/leche-frita.jpg' },
+    { id: 16 , nombre:"Rosquillas fritas", tipo: "Frito", especialidad:" 6",precio: "$ 4.75"   ,url: './assets/postres/fritos/rosquillas-fritas.jpg' }
 
   ];
   Extras:any = [
@@ -201,4 +206,8 @@ public getPostres(){
 public getExtras(){
   return this.Extras;
 }
+public getContactos(){
+  return this.Img;
+}
+
 }

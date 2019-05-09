@@ -43,3 +43,13 @@ button{
   border: none;
   background: chocolate;
 }
+@media (max-width: 425px){
+  .body{
+    margin-top: 35%;
+
+  }
+  
+
+  
+
+}

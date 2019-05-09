@@ -44,3 +44,25 @@ div.Alcohol{
  .Without div.content{
 background: rgba(255, 255, 255, 0.7)
  }
+ button{
+border:none;
+background: chocolate;
+margin-top:2%;
+ }
+.content h3{
+  font-family:'Akronim';
+  color:black;
+  font-size:40px;
+}
+.line{
+  justify-content: center;}
+button:hover{
+    background:chocolate;
+  }
+  @media (max-width: 760px){
+    div.body{
+      margin-top: 25%;
+      text-align: -webkit-center;
+      background: none;
+    }
+  }

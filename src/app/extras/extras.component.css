@@ -28,6 +28,21 @@
     color: chocolate;
     font-family: 'Fredoka One';
   }
-  .font{
-    
-  }
+  @media (max-width: 755px){
+    .body{
+      text-align: -webkit-center;
+
+    }
+    .content{
+      text-align: -webkit-center;
+    justify-content: center;
+    background: none;
+}
+
+  @media (max-width: 612px){
+    .body{
+      margin-top: 35%;
+    }
+  }  
+
+}

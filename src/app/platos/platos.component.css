@@ -97,3 +97,30 @@ height: 10px;
     font-size: xx-large;
 
 }
+@media (max-width: 870px) {
+	.slider img {
+		width: 50%;
+		height: 220px;
+	}
+	div.position{
+		margin-top:12%;
+	}
+}
+@media (max-width: 765px){
+	.carousel-indicators {
+		top: 2%;
+	}
+}
+
+@media (max-width: 405px){
+	.slider img {
+		width: 70%;
+		
+	} 
+	div.position{
+		margin-top:15%;
+	}
+	.carousel-indicators {
+		top: 1%;
+	}
+}

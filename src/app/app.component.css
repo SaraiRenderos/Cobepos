@@ -15,7 +15,7 @@ justify-content: space-between;
     bottom: 0;
     top: 0;
     z-index: 3;
-
+   
 }
 .navbar-collapse{
     justify-content: center;
@@ -37,3 +37,29 @@ border-bottom: 3px solid orange;
 .bg-dark {
     background-color: #000!important;
 }
+@media (max-width: 768px){
+.navbar{
+    justify-content: flex-end;
+    padding: 0;
+    
+
+}
+.content{
+    justify-content: safe;
+}
+.navbar-collapse{
+    justify-content: center;
+    text-align: -webkit-center;
+    background: black;
+}
+.logo{
+    width: 13%;
+    margin: 0;
+}}
+@media (max-width: 425px){
+    .logo{
+        width: 23%;
+        margin: 0;
+    }
+}
+
