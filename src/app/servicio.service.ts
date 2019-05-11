@@ -120,7 +120,7 @@ console.log(comentario)
     { id: 1 , nombre:"Frozen", clasificacion: "Frias", nacionalidad:"Mexico",precio: "$ 2.50"  , url: './assets/bebidas/frias/Frozen.jpg'},
     { id: 2 , nombre:"Jugos naturales", clasificacion: "Frias", nacionalidad:"",precio: "$ 2", url: './assets/bebidas/frias/JugosNaturales.jpg'},
     { id: 3 , nombre:"Té frio", clasificacion: "Frias", nacionalidad:"China", precio: "$ 1.75" , url: './assets/bebidas/frias/te.jpg'},
-    { id: 4 , nombre:"Licuados", clasificacion: "Frias", nacionalidad:"Argentina",precio: "$ 2.50" , url: './assets/bebidas/frias/lucuado.jpeg'}
+    { id: 4 , nombre:"Licuados", clasificacion: "Fria", nacionalidad:"Argentina",precio: "$ 2.50" , url: './assets/bebidas/frias/lucuado.jpeg'}
   ];
   Alcolicas:any = [
     { id: 1 , nombre:"Vodka", clasificacion: "Alcolicas", nacionalidad:"Rusia",precio: "$4.30"    ,url: './assets/bebidas/Alcoholicas/vodka.jpg' },
