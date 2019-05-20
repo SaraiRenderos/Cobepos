@@ -11,7 +11,14 @@ export class HomeComponent{
   Ofertas = null;
   string = null;
   constructor(private servicioService: ServicioService) {
-    this.Ofertas = servicioService.getPlatos();
+    
+      servicioService.getPlatos()
+    .valueChanges().subscribe( oferta =>{
+    
+        this.Ofertas = oferta;
+      }
+
+    )
     this.img = servicioService.getContactos();
     this.string = servicioService.getContactos();
    }

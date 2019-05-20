@@ -12,8 +12,20 @@ export class BebidasComponent {
   frias = null;
 
   constructor(private servicioService: ServicioService) {
-    this.calientes = servicioService.getCalientes();
-    this.frias = servicioService.getFrias();
+    servicioService.getCalientes()
+    .valueChanges().subscribe( caliente =>{
+    
+        this.calientes = caliente;
+      }
+
+    )
+    servicioService.getFrias()
+    .valueChanges().subscribe( frias =>{
+    
+        this.frias = frias;
+      }
+
+    )
     
   
   }

@@ -10,9 +10,13 @@ export class PostresComponent{
 
   postres = null;
   constructor(private servicioService: ServicioService) {
-    this.postres = servicioService.getPostres();
+    servicioService.getPostres()
+    .valueChanges().subscribe( postres =>{
     
-    
+        this.postres = postres;
+      }
+
+    )
   
   }
 

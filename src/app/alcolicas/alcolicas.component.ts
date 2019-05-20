@@ -8,7 +8,14 @@ import { ServicioService } from '../servicio.service';
 export class AlcolicasComponent{
   alcohol = null;
   constructor(private serviceService :ServicioService) {
-    this.alcohol = serviceService.getAlcoholica();
+
+    serviceService.getAlcoholica()
+    .valueChanges().subscribe( alcohol =>{
+    
+        this.alcohol = alcohol;
+      }
+
+    )
    }
 
 

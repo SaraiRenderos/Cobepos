@@ -10,7 +10,13 @@ export class ExtrasComponent {
 
   extras = null;
   constructor(private servicioService: ServicioService) {
-    this.extras = servicioService.getExtras();
+    servicioService.getExtras()
+    .valueChanges().subscribe( extras =>{
+    
+        this.extras = extras;
+      }
+
+    )
     
     
   
